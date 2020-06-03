@@ -1,0 +1,11 @@
+--cpu Cortex-M4
+".\startup_tm4c123.o"
+".\gpio.o"
+".\main.o"
+".\keypad.o"
+".\lcd.o"
+".\uart.o"
+--scatter ".\GPIO.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\GPIO.map" -o .\GPIO.axf

@@ -1,0 +1,85 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+D:\Tracks\Microcontroller\GPIO\GPIO.uvproj
+Project File Date:  03/08/2020
+
+<h2>Output:</h2>
+Build target 'Target 1'
+linking...
+Program Size: Code=8004 RO-data=1008 RW-data=24 ZI-data=1512  
+".\GPIO.axf" - 0 Error(s), 0 Warning(s).
+</pre>
+</body>
+</html>
+otoytpe for getting char from keyppad
+KeyPad.h(47): warning:  #1295-D: Deprecated declaration keypad_init - give arg types
+  void keypad_init(); //protoytpe for initializing keypad
+UART.h(17): warning:  #1295-D: Deprecated declaration UART_RECIEVE_CHARACTER - give arg types
+  uint8_t UART_RECIEVE_CHARACTER();
+Main.c(34): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+    rooms_num = atoi(str);
+Main.c(49): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+                x = atoi(str);
+Main.c(55): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+              y = atoi(str);
+Main.c(60): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+                  rooms[y-1].pin = atoi(str)%10000;
+Main.c(103): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+              y = atoi(str);
+Main.c(116): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+              y = atoi(str);
+Main.c: 9 warnings, 0 errors
+compiling KeyPad.c...
+KeyPad.h(46): warning:  #1295-D: Deprecated declaration keypad_get_char - give arg types
+  uint8_t keypad_get_char(); //protoytpe for getting char from keyppad
+KeyPad.h(47): warning:  #1295-D: Deprecated declaration keypad_init - give arg types
+  void keypad_init(); //protoytpe for initializing keypad
+KeyPad.c(79): warning:  #188-D: enumerated type mixed with another type
+                                                if( digitalPinRead(rows_port,ROW+rows_pos) )   // any key get pressed
+KeyPad.c(90): warning:  #940-D: missing return statement at end of non-void function "keypad_get_char"
+  }
+KeyPad.c(113): warning:  #111-D: statement is unreachable
+                                break;
+KeyPad.c(115): warning:  #111-D: statement is unreachable
+                                break;
+KeyPad.c(117): warning:  #111-D: statement is unreachable
+                                break;
+KeyPad.c(119): warning:  #111-D: statement is unreachable
+                                break;
+KeyPad.c(121): warning:  #111-D: statement is unreachable
+                                break;
+KeyPad.c(123): warning:  #111-D: statement is unreachable
+                                break;
+KeyPad.c(125): warning:  #111-D: statement is unreachable
+                                break;
+KeyPad.c(127): warning:  #111-D: statement is unreachable
+                                break;          
+KeyPad.c(129): warning:  #111-D: statement is unreachable
+                                break;
+KeyPad.c(131): warning:  #111-D: statement is unreachable
+                                break;
+KeyPad.c(133): warning:  #111-D: statement is unreachable
+                                break;
+KeyPad.c(135): warning:  #111-D: statement is unreachable
+                                break;
+KeyPad.c(137): warning:  #111-D: statement is unreachable
+                                break;                  
+KeyPad.c(139): warning:  #111-D: statement is unreachable
+                                break;
+KeyPad.c(141): warning:  #111-D: statement is unreachable
+                                break;
+KeyPad.c(143): warning:  #111-D: statement is unreachable
+                                break;
+KeyPad.c(151): warning:  #1-D: last line of file ends without a newline
+        
+KeyPad.c: 21 warnings, 0 errors
+compiling UART.c...
+UART.h(17): warning:  #1295-D: Deprecated declaration UART_RECIEVE_CHARACTER - give arg types
+  uint8_t UART_RECIEVE_CHARACTER();
+UART.c: 1 warning, 0 errors
+linking...
+Program Size: Code=8004 RO-data=1008 RW-data=24 ZI-data=1512  
+".\GPIO.axf" - 0 Error(s), 31 Warning(s).
